@@ -37,6 +37,7 @@ public class Auto {
 	}
 
 	/**Setter-Methode*/
+	@SuppressWarnings("unused")
 	private void setFarbe(String farbe) {
 		this.farbe = farbe;
 	}
@@ -47,6 +48,7 @@ public class Auto {
 	}
 
 	/**Setter-Methode*/
+	@SuppressWarnings("unused")
 	private void setPS(int ps) {
 		this.ps = ps;
 	}
@@ -57,10 +59,19 @@ public class Auto {
 	}
 
 	/**Setter-Methode*/
+	@SuppressWarnings("unused")
 	private void setAnzahlReifen(int anzahlReifen) {
 		this.anzahlReifen = anzahlReifen;
 	}
 
+	public void fahren() {
+		System.out.println("Brumm!!!!!");
+	}
+	
+	public void hupen() {
+		System.out.println("Mööööp!");
+	}
+	
 	/**Ueberschriebene toString Methode*/
 	@Override
 	public String toString() {
