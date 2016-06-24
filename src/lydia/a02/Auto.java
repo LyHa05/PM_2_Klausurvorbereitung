@@ -1,16 +1,19 @@
 package lydia.a02;
 
+import lydia.a01.Urheberrecht;
+
 /** 
  * @author Lydia Pflug
  * @datum 24.06.2016
  * Klasse, die ein Auto beschreibt.
  * */
 
+@Urheberrecht(urheber = "ich", jahr = 2016)
 public class Auto {
 
 	public String farbe;
 	
-	public int ps;
+	private int ps;
 	
 	private int anzahlReifen;
 	
