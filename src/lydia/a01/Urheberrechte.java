@@ -4,11 +4,15 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import java.time.LocalDateTime;
+
+/** 
+ * @author Lydia Pflug
+ * @datum 24.06.2016
+ * Interface, das Annotation Urheberrechte beschreibt.
+ * */
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface Urheberrechte {
-	public String urheber() default "Lydia Pflug";
-	public LocalDateTime datumUhrzeit default LocalDateTime.of(2016,06,24,9,10);
+	Urheberrecht[] value();
 }
