@@ -1,9 +1,11 @@
-package dennis;
+package dennis.auto;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+
+import dennis.Urheberrecht;
 
 public class AutoSchrauber {
 	Auto auto = new Auto("Rot", 4, 100);

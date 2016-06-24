@@ -1,4 +1,6 @@
-package dennis;
+package dennis.auto;
+
+import dennis.Urheberrecht;
 
 @Urheberrecht(name = "Dennis", jahr = 2016)
 public class Auto {

@@ -1,0 +1,4 @@
+Prop1=hjf
+Prop2=22.0
+Prop3=Nilpferd
+WertNeu=20
