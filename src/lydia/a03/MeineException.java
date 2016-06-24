@@ -2,6 +2,8 @@ package lydia.a03;
 
 public class MeineException extends Exception {
 
+	private static final long serialVersionUID = 1L;
+
 	public MeineException() {
 		// TODO Auto-generated constructor stub
 	}
