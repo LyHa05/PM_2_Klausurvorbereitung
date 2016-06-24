@@ -1,0 +1,3 @@
+Prop1 = hallo
+Prop2 = abcd
+Prop3 = Nilpferd
