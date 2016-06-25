@@ -16,6 +16,7 @@ public class FileChooserEK extends Application {
         fc.getExtensionFilters().add(new ExtensionFilter("*.txt"));
         file = fc.showOpenDialog(stage);
 
+
         stage.show();
         stage.close();
     }
