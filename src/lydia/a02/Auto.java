@@ -8,7 +8,8 @@ import lydia.a01.Urheberrecht;
  * Klasse, die ein Auto beschreibt.
  * */
 
-@Urheberrecht(urheber = "ich", jahr = 2016)
+@Urheberrecht(urheber = "Lydia Pflug", jahr = 2016)
+//@Urheberrecht(urheber = "auch ich", jahr = 2016)
 public class Auto {
 
 	public String farbe;
