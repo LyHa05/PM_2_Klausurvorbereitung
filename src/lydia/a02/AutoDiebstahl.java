@@ -65,10 +65,7 @@ public class AutoDiebstahl {
 		
 		for(Field variable : iVariablen) {
 			variable.setAccessible(true);
-//			String varName = variable.getName();
 			System.out.println("Variablenname: " + variable.getName());
-			
-			
 			System.out.println(" Wert: " + variable.get(auto));
 		}
 	}
