@@ -16,7 +16,6 @@ public class FileChooserEK extends Application {
         fc.getExtensionFilters().add(new ExtensionFilter("*.txt"));
         file = fc.showOpenDialog(stage);
 
-
         stage.show();
         stage.close();
     }
@@ -29,10 +28,6 @@ public class FileChooserEK extends Application {
 
     public static void main(String[] args) {
         String path = FileChooserEK.chooseFile().getAbsolutePath();
-        if(path == null){
-            System.out.println("Es wurde keine Datei ausgewaehlt.");
-        } else {
-            new EKParser(path).startenParser();
-        }
+        new EKParser(path).startenParser();
     }
 }

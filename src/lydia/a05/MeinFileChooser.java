@@ -9,7 +9,6 @@ import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 
 public class MeinFileChooser extends Application{
-
 	private static File meinFile;
 
 	@Override
@@ -17,7 +16,6 @@ public class MeinFileChooser extends Application{
 		FileChooser meinFC = new FileChooser();
 		meinFC.getExtensionFilters().add(new ExtensionFilter("Bilder", "*.jpg","*.png","*.btm","*.tiff","*.txt"));
 		meinFile = meinFC.showOpenDialog(meineStage);
-		
 		
 		meineStage.show();
 		meineStage.close();
