@@ -18,6 +18,11 @@ public class Auto {
         this(auto.getFarbe(), auto.getPs(), auto.getAnzahlReifen());
     }
 
+    @Override
+    public String toString(){
+        return "Farbe: " + farbe + " PS: " + ps + " Reifen: " + anzahlReifen;
+    }
+
     public void fahren(){}
 
     private void hupen(){}
