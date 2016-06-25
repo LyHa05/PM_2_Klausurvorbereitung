@@ -1,9 +1,9 @@
-package lydia.a05;
+//package lydia.a05;
 
 import java.lang.reflect.Array;
 import java.util.function.Function;
 
-public class DerErlkoenig2 {
+//public class DerErlkoenig2 {
 
 	//public static Function<String[],String[]> getauschterString(String[] stringArray) {
 	//	String[] neuesStringArray = new String[stringArray.length];
@@ -11,7 +11,7 @@ public class DerErlkoenig2 {
 	//		neuesStringArray[stringArray.length-1-i]=stringArray[i];
 	//	}
 	//	return stringArray -> neuesStringArray;
-	}
+	//}
 	
 	
 	//public static void woerterInZeileDrehen() {
@@ -20,4 +20,4 @@ public class DerErlkoenig2 {
 	//		.map(string -> string.split(""));
 	//}
 
-}
+//}
