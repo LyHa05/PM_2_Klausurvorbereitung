@@ -28,6 +28,15 @@ public class KonfigLeser {
 		}
 	}
 
+    private void parseConfigLambda(){
+        try {
+            Files.lines(dateiPfad).map(s -> {return s.replaceAll("\\s+", "");}).map(s -> s.split("="))
+                    .forEach(a -> configWerte.put(a[0], a[1]));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+	
 	public String getValue(String property) {
 		pruefenObWertExisitiert(property);
 
