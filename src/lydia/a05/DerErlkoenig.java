@@ -56,8 +56,8 @@ public class DerErlkoenig {
 	
 	public static void main(String[] args) throws IOException {
 
-//		streamLadenUndAusgeben();
-//		System.out.println("_________________________________");
+		streamLadenUndAusgeben();
+		System.out.println("_________________________________");
 		kindZaehlen();
 	}
 }
