@@ -3,7 +3,7 @@ package thomas.a06;
 import java.util.NoSuchElementException;
 
 public class Kette<T>{
-	private Element first;
+	private Element obere;
 	private int size;
 	
 	
@@ -15,7 +15,7 @@ public class Kette<T>{
 	}
 
 	public Kette(){
-		first = null;
+		obere = null;
 		size = 0;
 	}
 	
@@ -25,29 +25,29 @@ public class Kette<T>{
 	}
 	
 	public boolean isEmpty(){
-		return first == null;
+		return obere == null;
 	}
 	
 	public void push(T element){
-		Element alteFirst = first;
-		first = new Element();
-		first.kettenElement = element;
-		first.next = alteFirst;
+		Element alteFirst = obere;
+		obere = new Element();
+		obere.kettenElement = element;
+		obere.next = alteFirst;
 		size++;
 		
 	}
 	
 	public T pop(){
 		if(isEmpty()) throw new NoSuchElementException("Kette ist leer!");
-		T kettenElement = first.kettenElement;
-		first =first.next;
+		T kettenElement = obere.kettenElement;
+		obere =obere.next;
 		size--;
 		return kettenElement;
 	}
 	
 	public T peek(){
 		if(isEmpty()) throw new NoSuchElementException("Kette ist leer!");
-		return first.kettenElement;}
+		return obere.kettenElement;}
 	
 	
 	public static void main(String[] args) {
