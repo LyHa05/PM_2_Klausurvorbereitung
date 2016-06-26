@@ -4,26 +4,24 @@ import java.util.*;
 
 public class I18NSample {
 
-    static public void main(String[] args) {
+   static public void main(String[] args) {
 
-//        String language;
-//        String country;
-//
-//        if (args.length != 2) {
-//            language = new String("en");
-//            country = new String("US");
-//        } else {
-//            language = new String(args[0]);
-//            country = new String(args[1]);
-//        }
+      String language = "";
+      String country = "";
 
-        
-        Locale aLocale = new Locale("en","US");
+      Locale currentLocale, aLocale, frLocale, deLocale;
+      ResourceBundle messages;
 
-        ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", aLocale);
-        
-        System.out.println(messages.getString("Begruessung"));
-        System.out.println(messages.getString("Montag")); 
-        System.out.println(messages.getString("Freitag"));}
-    
+      currentLocale = new Locale(language, country);
+      aLocale = new Locale("en","US");
+      frLocale = new Locale("fr","FR");
+      deLocale = new Locale("de","DE");
+
+      messages =
+        ResourceBundle.getBundle("MessagesBundle_fr_FR",currentLocale);
+
+      System.out.println(messages.getString("Begruessung"));
+      System.out.println(messages.getString("Montag"));
+      System.out.println(messages.getString("Freitag"));
+   }
 }
