@@ -3,6 +3,7 @@ package lydia.a06;
 public class MeineLinkedList<E> {
 
 	private Knoten<E> letztesElement;
+	LinkedList
 	
 		public MeineLinkedList() {
 			this.letztesElement = null;
